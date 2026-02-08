@@ -1,13 +1,14 @@
-import { Bot } from 'grammy'
+import { Bot } from "grammy";
+import "dotenv/config";
 
-const {
-    BOT_TOKEN: token = '',
-} = process.env
+const { BOT_TOKEN: token = "" } = process.env;
 
 // Set your token in the vercel environment variable
-export const bot = new Bot(token)
+export const bot = new Bot(token);
 
 // attach all middleware
-bot.on('message', async ctx => {
-    await ctx.reply('Hi there!')
-})
+bot.on("message", async (ctx) => {
+	await ctx.reply("Hi there!");
+});
+
+bot.start();
