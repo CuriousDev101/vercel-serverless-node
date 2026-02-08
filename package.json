@@ -1,0 +1,20 @@
+{
+	"name": "vercel-serverless-node",
+	"version": "1.0.0",
+	"description": "You can deploy your bots to Vercel as a serverless function that runs on [Node.js](https://nodejs.org).",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"grammy": "^1.39.3",
+		"typescript": "^5.9.3"
+	},
+	"devDependencies": {
+		"@types/node": "^25.2.2"
+	}
+}
